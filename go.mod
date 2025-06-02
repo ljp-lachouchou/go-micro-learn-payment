@@ -1,4 +1,4 @@
-module payment
+module github.com/ljp-lachouchou/go-micro-learn-payment
 
 go 1.24.2
 
