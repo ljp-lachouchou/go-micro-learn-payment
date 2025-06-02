@@ -1,32 +1,30 @@
 package service
 
 import (
-	"payment/domain/model"
-	"payment/domain/repository"
+	"github.com/ljp-lachouchou/go-micro-learn-payment/domain/model"
+	"github.com/ljp-lachouchou/go-micro-learn-payment/domain/repository"
 )
 
 type IPaymentDataService interface {
-	AddPayment(*model.Payment) (int64 , error)
+	AddPayment(*model.Payment) (int64, error)
 	DeletePayment(int64) error
 	UpdatePayment(*model.Payment) error
 	FindPaymentByID(int64) (*model.Payment, error)
 	FindAllPayment() ([]model.Payment, error)
 }
 
-
 //创建
-func NewPaymentDataService(paymentRepository repository.IPaymentRepository) IPaymentDataService{
-	return &PaymentDataService{ paymentRepository }
+func NewPaymentDataService(paymentRepository repository.IPaymentRepository) IPaymentDataService {
+	return &PaymentDataService{paymentRepository}
 }
 
 type PaymentDataService struct {
 	PaymentRepository repository.IPaymentRepository
 }
 
-
 //插入
-func (u *PaymentDataService) AddPayment(payment *model.Payment) (int64 ,error) {
-	 return u.PaymentRepository.CreatePayment(payment)
+func (u *PaymentDataService) AddPayment(payment *model.Payment) (int64, error) {
+	return u.PaymentRepository.CreatePayment(payment)
 }
 
 //删除
@@ -48,4 +46,3 @@ func (u *PaymentDataService) FindPaymentByID(paymentID int64) (*model.Payment, e
 func (u *PaymentDataService) FindAllPayment() ([]model.Payment, error) {
 	return u.PaymentRepository.FindAll()
 }
-

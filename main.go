@@ -4,6 +4,10 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	common "github.com/ljp-lachouchou/go-learn-micro-common"
+	"github.com/ljp-lachouchou/go-micro-learn-payment/domain/repository"
+	service2 "github.com/ljp-lachouchou/go-micro-learn-payment/domain/service"
+	"github.com/ljp-lachouchou/go-micro-learn-payment/handler"
+	payment "github.com/ljp-lachouchou/go-micro-learn-payment/proto/payment"
 	"github.com/micro/go-micro/v2"
 	log "github.com/micro/go-micro/v2/logger"
 	"github.com/micro/go-micro/v2/registry"
@@ -12,10 +16,6 @@ import (
 	ratelimit "github.com/micro/go-plugins/wrapper/ratelimiter/uber/v2"
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing/v2"
 	"github.com/opentracing/opentracing-go"
-	"payment/domain/repository"
-	service2 "payment/domain/service"
-	"payment/handler"
-	payment "payment/proto/payment"
 )
 
 var QPS = 1000

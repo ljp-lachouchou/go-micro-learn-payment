@@ -5,6 +5,7 @@ go 1.24.2
 require (
 	github.com/golang/protobuf v1.4.0
 	github.com/jinzhu/gorm v1.9.16
+	github.com/ljp-lachouchou/go-learn-micro-common v0.0.0-20250601130230-72e7a8ba6f8a
 	github.com/micro/go-micro/v2 v2.9.1
 	github.com/micro/go-plugins/registry/consul/v2 v2.9.1
 	github.com/micro/go-plugins/wrapper/monitoring/prometheus/v2 v2.9.1
@@ -48,7 +49,6 @@ require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/kevinburke/ssh_config v0.0.0-20190725054713-01f96b0aa0cd // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
-	github.com/ljp-lachouchou/go-learn-micro-common v0.0.0-20250601130230-72e7a8ba6f8a // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/micro/cli/v2 v2.1.2 // indirect
 	github.com/micro/go-plugins/config/source/consul/v2 v2.9.1 // indirect

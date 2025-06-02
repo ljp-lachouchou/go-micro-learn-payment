@@ -3,9 +3,9 @@ package handler
 import (
 	"context"
 	common "github.com/ljp-lachouchou/go-learn-micro-common"
-	"payment/domain/model"
-	"payment/domain/service"
-	. "payment/proto/payment"
+	"github.com/ljp-lachouchou/go-micro-learn-payment/domain/model"
+	"github.com/ljp-lachouchou/go-micro-learn-payment/domain/service"
+	. "github.com/ljp-lachouchou/go-micro-learn-payment/proto/payment"
 )
 
 type Payment struct {
