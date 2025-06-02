@@ -1,0 +1,2 @@
+{"level":"info","ts":"2025-06-01T21:06:36.229+0800","caller":"payment/main.go:24","msg":"程序启动"}
+{"level":"info","ts":"2025-06-01T21:19:22.833+0800","caller":"payment/main.go:24","msg":"程序启动"}
